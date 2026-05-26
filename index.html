@@ -6,141 +6,121 @@
     <title>Ashwini & Vijay Wedding</title>
     <meta
       name="description"
-      content="Ashwini and Vijay invite you to celebrate their sacrament of holy matrimony on 11 July 2026, followed by reception on 12 July 2026."
+      content="Ashwini and Vijay invite you to celebrate their wedding and reception in July 2026."
     >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="app-dark.css">
   </head>
   <body>
-    <header class="hero" id="top">
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#top">Home</a>
-        <a href="#story">Story</a>
-        <a href="#events">Events</a>
-        <a href="#details">Details</a>
-      </nav>
-      <div class="hero__content">
-        <p class="kicker">We are getting married</p>
-        <h1>Ashwini & <span>Vijay</span></h1>
-        <p class="save">Save the date</p>
-        <time datetime="2026-07-11">July 11th 2026</time>
-        <a class="hero__button" href="#events">View celebration</a>
-      </div>
-    </header>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">A &amp; V</a>
+        <button class="menu-button" type="button" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </header>
 
-    <main>
-      <section class="story" id="story" aria-labelledby="story-title">
-        <p class="section-mark" aria-hidden="true">❧</p>
-        <h2 id="story-title">Our Story</h2>
-        <p class="section-intro">
-          So they are no longer two, but one. Therefore what God has joined together,
-          let no one separate.
-        </p>
-
-        <div class="couple-story">
-          <article class="story-person">
-            <h3>Ashwini</h3>
-            <p>D/O Mr. Francis Xavier & Mrs. Karleen</p>
-            <div class="socials" aria-label="Ashwini social links">
-              <span>f</span><span>t</span><span>p</span>
-            </div>
-          </article>
-
-          <div class="portrait-wrap" aria-hidden="true">
-            <span class="ampersand">&amp;</span>
-            <img src="assets/rustic-hero.png" alt="">
+      <main>
+        <section class="hero screen" id="home" aria-labelledby="hero-title">
+          <div class="hero__content">
+            <p class="kicker">We are getting married</p>
+            <h1 id="hero-title">Ashwini &amp; Vijay</h1>
+            <p class="save">Save the date</p>
+            <time datetime="2026-07-11">July 11th 2026</time>
+            <a class="outline-button" href="#events">View celebration</a>
           </div>
+        </section>
 
-          <article class="story-person story-person--right">
-            <h3>Vijay</h3>
-            <p>S/O Mr. Gopi Krishna & Mrs. Saraswati (Late)</p>
-            <div class="socials" aria-label="Vijay social links">
-              <span>f</span><span>t</span><span>p</span>
-            </div>
-          </article>
-        </div>
-      </section>
+        <section class="screen story" id="story" aria-labelledby="story-title">
+          <p class="section-kicker">Our story</p>
+          <h2 id="story-title">No longer two, but one</h2>
+          <p>
+            Therefore what God has joined together, let no one separate.
+          </p>
+          <div class="couple-grid">
+            <article>
+              <span>A</span>
+              <h3>Ashwini</h3>
+              <p>D/O Mr. Francis Xavier &amp; Mrs. Karleen</p>
+            </article>
+            <article>
+              <span>V</span>
+              <h3>Vijay</h3>
+              <p>S/O Mr. Gopi Krishna &amp; Mrs. Saraswati (Late)</p>
+            </article>
+          </div>
+        </section>
 
-      <section class="quote-band" id="blessing" aria-label="Wedding blessing">
-        <blockquote>
-          <span>“</span>
-          Better To Have Loved And Lost,<br>
-          Than To Have Never Loved
-          <cite>Mathew 19:6</cite>
-          <span>”</span>
-        </blockquote>
-      </section>
+        <section class="screen events" id="events" aria-labelledby="events-title">
+          <p class="section-kicker">Events</p>
+          <h2 id="events-title">Wedding Celebrations</h2>
+          <div class="event-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Wedding</h3>
+                <time datetime="2026-07-11T11:00:00+05:30">11 July 2026 · 11:00 AM</time>
+                <p>Patrick's Church</p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Reception</h3>
+                <time datetime="2026-07-12T18:00:00+05:30">12 July 2026 · 06:00 PM</time>
+                <p>Lilly Pond</p>
+              </div>
+            </article>
+          </div>
+        </section>
 
-      <section class="events" id="events" aria-labelledby="events-title">
-        <p class="section-mark" aria-hidden="true">❧</p>
-        <h2 id="events-title">Wedding Events</h2>
-        <p class="section-intro">Invite you to celebrate the sacrament of holy matrimony.</p>
+        <section class="screen order" id="order" aria-labelledby="order-title">
+          <p class="section-kicker">Reception day</p>
+          <h2 id="order-title">Order of Events</h2>
+          <ol>
+            <li><span>i</span><strong>Wedding March</strong></li>
+            <li><span>ii</span><strong>Couple's Toast</strong></li>
+            <li><span>iii</span><strong>Cake-Cutting Ceremony</strong></li>
+            <li><span>iv</span><strong>Dance Performances</strong></li>
+          </ol>
+        </section>
 
-        <div class="event-cards">
-          <article class="event-card">
-            <span class="event-icon">▦</span>
-            <h3>Wedding</h3>
-            <time datetime="2026-07-11T11:00:00+05:30">11 July 2026 · 11:00 AM</time>
-            <p>Patrick's Church</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Patrick%27s%20Church" target="_blank" rel="noreferrer">Open map</a>
-          </article>
-          <article class="event-card">
-            <span class="event-icon">☙</span>
-            <h3>Reception</h3>
-            <time datetime="2026-07-12T18:00:00+05:30">12 July 2026 · 06:00 PM</time>
-            <p>Lilly Pond</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Lilly%20Pond" target="_blank" rel="noreferrer">Open map</a>
-          </article>
-        </div>
-      </section>
+        <section class="screen rsvp" id="rsvp" aria-labelledby="rsvp-title">
+          <p class="section-kicker">Blessing</p>
+          <h2 id="rsvp-title">Your presence is our gift</h2>
+          <p>
+            Join Ashwini and Vijay as they begin their new life together with prayer,
+            family, music, and celebration.
+          </p>
+          <a class="outline-button outline-button--dark" href="https://www.google.com/maps/search/?api=1&query=Patrick%27s%20Church" target="_blank" rel="noreferrer">Open wedding map</a>
+        </section>
+      </main>
 
-      <section class="details" id="details" aria-labelledby="details-title">
-        <p class="section-mark" aria-hidden="true">❧</p>
-        <h2 id="details-title">Event Attractions</h2>
-        <p class="section-intro">
-          A gentle celebration with family, prayer, music, and the first memories of a new life together.
-        </p>
+      <nav class="tabbar" aria-label="Wedding sections">
+        <a href="#home" aria-label="Home">
+          <span>⌂</span>
+          Home
+        </a>
+        <a href="#story" aria-label="Story">
+          <span>♡</span>
+          Story
+        </a>
+        <a href="#events" aria-label="Events">
+          <span>□</span>
+          Events
+        </a>
+        <a href="#rsvp" aria-label="RSVP">
+          <span>✉</span>
+          RSVP
+        </a>
+      </nav>
+    </div>
 
-        <div class="detail-grid">
-          <article>
-            <span>▦</span>
-            <h3>Wedding March</h3>
-            <p>The ceremony begins at Patrick's Church at 11:00 AM.</p>
-          </article>
-          <article>
-            <span>♕</span>
-            <h3>What To Wear</h3>
-            <p>Classic celebration attire in soft festive colors.</p>
-          </article>
-          <article>
-            <span>▣</span>
-            <h3>Parking Area</h3>
-            <p>Parking guidance will be available near each venue.</p>
-          </article>
-          <article>
-            <span>▤</span>
-            <h3>Documentation</h3>
-            <p>Family moments, portraits, and blessings throughout the day.</p>
-          </article>
-          <article>
-            <span>▥</span>
-            <h3>Celebration</h3>
-            <p>Reception at Lilly Pond on 12 July 2026 at 06:00 PM.</p>
-          </article>
-          <article>
-            <span>☕</span>
-            <h3>Food & Drinks</h3>
-            <p>Dinner and refreshments will be served at the reception.</p>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
+    <script src="script.js?v=stitch-dark"></script>
   </body>
 </html>

@@ -79,6 +79,7 @@ a {
 }
 
 .screen {
+  scroll-margin-top: 58px;
   min-height: 100svh;
   padding: 96px max(22px, calc((100vw - 980px) / 2)) 92px;
 }
