@@ -163,6 +163,49 @@ h1 {
   background: linear-gradient(180deg, #171412, #100f0e);
 }
 
+.countdown-section {
+  padding: 58px max(22px, calc((100vw - 980px) / 2));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, #151210, #100f0e);
+}
+
+.countdown-section h2 {
+  margin-bottom: 26px;
+  font-size: clamp(2.1rem, 6vw, 3.1rem);
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.countdown div {
+  display: grid;
+  min-width: 0;
+  min-height: 86px;
+  place-items: center;
+  padding: 12px 6px;
+  border: 1px solid var(--line);
+  background: rgba(247, 241, 232, 0.035);
+}
+
+.countdown strong {
+  color: var(--cream);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.8rem, 7vw, 2.65rem);
+  line-height: 0.9;
+}
+
+.countdown span {
+  color: var(--gold);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
 .story,
 .events,
 .order,
@@ -297,32 +340,49 @@ h3 {
   position: fixed;
   z-index: 20;
   left: 50%;
-  bottom: 14px;
+  bottom: 16px;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   width: min(390px, calc(100% - 26px));
-  min-height: 64px;
-  padding: 8px 10px;
-  border: 1px solid rgba(247, 241, 232, 0.14);
-  border-radius: 18px;
-  background: rgba(247, 241, 232, 0.94);
-  color: #24201d;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+  min-height: 70px;
+  padding: 9px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0.16)),
+    rgba(247, 241, 232, 0.22);
+  color: rgba(255, 255, 255, 0.76);
+  box-shadow:
+    0 20px 58px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.38);
+  backdrop-filter: blur(20px) saturate(145%);
+  -webkit-backdrop-filter: blur(20px) saturate(145%);
   transform: translateX(-50%);
 }
 
 .tabbar a {
   display: grid;
   place-items: center;
-  gap: 3px;
-  color: #6d625b;
+  gap: 5px;
+  color: rgba(255, 255, 255, 0.74);
   font-size: 0.58rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 180ms ease, transform 180ms ease;
 }
 
-.tabbar span {
-  font-size: 1rem;
+.tabbar a:hover,
+.tabbar a:focus-visible {
+  color: var(--cream);
+  transform: translateY(-1px);
+}
+
+.tabbar img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.95;
+  filter: brightness(0) invert(1);
 }
 
 @media (min-width: 760px) {
